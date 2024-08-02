@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+.inter{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.miama{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 9rem;
+    line-height: 0%;
+    background: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+}
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+/* shared styled */
+
+
+/* text color white */
+.color-white{
+    color: rgb(255, 255, 255);
+}
+.btn-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    border: none;
+    font-size: 1.125rem;
+    max-width: 224px;
+}
+
+
+
+
+
+/* nav related style starts */
+nav{
+    max-width: 1060px;
+    margin: 57px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 47px;
+    font-size: 1.125rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.hamburger{
+    display: none;
+}
+.nav-title{
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+    margin: 0;
+}
+.nav-btn{
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 8px 20px 8px 20px;
+    background-color:  rgb(230, 83, 60);
+    border-radius: 46px;
+    border: none;
+
+}
+
+/* nav related style ends */
+
+/* banner section related style stars */
+
+.banner{
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 167px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.banner-title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+#download-btn{
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+.banner-img-container{
+    position: relative;
+}
+.service-token-1{
+    padding: 16px 23px 17px 24px;
+    width: 193px;
+    border-radius: 12px;
+    position: absolute;
+    left: 66%;
+    top: 20%;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.150);
+}
+
+.quantity{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.service-token-1 p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: .8125rem;
+    margin-top: 5px;
+}
+.service-token-2{
+    padding: 20px 23px 20px 23px;
+    width: 203px;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 12%;
+    left: -32%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7px;
+    background-color: rgba(48, 48, 48, 0.684);
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);;
+}
+
+.lower-quantity{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.service-token-2 p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.play-icon{
+    position: absolute;
+    bottom: 48%;
+    left: -20%;
+}
+
+
+/* banner section related style ends */
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    nav{
+        width: calc(100% - 40px);
+        margin-top: 52px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner{
+
+        flex-direction: column;
+        gap: 5px;
+    }
+    .banner-text{
+        width: calc(100% - 40px);
+        margin: 50px auto;
+    }
+    .banner-title{
+        font-size: 2.125rem;
+    }
+    .miama{
+        font-size: 4rem;
+        
+    }
+    .btn-primary{
+        width: 170px;
+        padding: 16px 20px;
+    }
+    .club{
+        display: none;
+    }
+    .service-token-1{
+        padding: 12px 0 11px 18px;
+        width: 160px;
+        top: 12%;
+        left: 55%;
+    }
+    .service-token-2{
+        padding: 14px 10px 14px 16px;
+        width: 180px;
+        left: -2%;
+        bottom: 42%;
+    }
+    .play-icon{
+        bottom: 47.5%;
+        left: 7%;
+    }
+}
