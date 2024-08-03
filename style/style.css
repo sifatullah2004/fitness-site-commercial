@@ -52,6 +52,7 @@ header{
     font-size: 0.875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
 }
 
 
@@ -363,7 +364,7 @@ input::placeholder {
 }
 .trainer-name{
     font-size: 1.25rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 .trainer{
     font-size: .875rem;
@@ -385,12 +386,79 @@ input::placeholder {
     left: 5%;
 }
 .teem-section-heading{
-    max-width: 671px;
+    width: 671px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 76px;
 }
 /* teem section ends here */
+/* last section starts here */
+.last-section{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding;
+}
+.last-section-child{
+    display: flex;
+    max-width: 1060px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 76px;
+}
+.get-started{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.get-started-a{
+    text-decoration: none;
+    font-size: 1.43rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.get-started ul li{
+    list-style: none;
+}
+.fitness{
+    width: 50%;
+}
+.fitness-child{
+    text-align: left;
+    width: 400px;
+}
+.fitness-title{
+    font-size: 4.375rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+    margin-bottom: 20px;
+}
+.get-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.help{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* last section ends here */
+
+/* footer related style starts here */
+footer{
+    width: 1060px;
+    height: 100px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-child{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.125rem;
+}
+/* footer related style ends here */
 
 
 
@@ -399,7 +467,7 @@ input::placeholder {
 
 @media screen and (max-width: 576px) {
     .description-primary{
-        line-height: 24px;
+        margin-top: 14px;
     }
     nav{
         width: calc(100% - 40px);
@@ -411,7 +479,7 @@ input::placeholder {
     .hamburger{
         display: block;
     }
-    .banner, .habit-section-img-container, .running-section, .calculator-container{
+    .banner, .habit-section-img-container, .running-section, .calculator-container, .last-section-child, .get-started{
         flex-direction: column;
     }
     .banner{
@@ -495,11 +563,8 @@ input::placeholder {
     .calculator-title{
         font-size: 1rem;
     }
-    .calculation-section-header,{
+    .calculation-section-header{
         width: calc(100% - 40px);
-    }
-    .calculation-section-title{
-        margin-bottom: 14px;
     }
     .teem-section{
         width: calc(100% - 40px);
@@ -508,6 +573,26 @@ input::placeholder {
     .teem-img-container{
         grid-template-columns: repeat(1,1fr);
         align-items: center;
-        padding: 12px;
+        padding: 20px;
     }
+    .teem-section-heading{
+        width: 100%;
+    }
+    .last-section-child {
+        padding: 20px;
+    }
+    .get-started, .fitness{
+        width: 100%;
+    }
+    .fitness-child{
+        width: 93%;
+        margin-bottom: 35px;
+    }
+    .get-started{
+        gap: 25px;
+    }
+    footer{
+        width: 100%;
+    }
+    
 }
