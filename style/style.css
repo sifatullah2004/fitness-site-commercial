@@ -270,7 +270,7 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 .calculator-container{
-    background-color: rgb(34, 34, 34);;
+    background-color: rgb(34, 34, 34);
 }
 .calculator-title{
     font-size: 1.75rem;
@@ -294,8 +294,6 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
-/* calculation sector ends here */
 .calculation-section-header{
    max-width: 671px;
    margin: 78px auto;
@@ -322,6 +320,7 @@ input::placeholder {
     margin-top: 10px;
     margin-bottom: 34px;
 }
+
 .calculator-input-container{
     display: flex;
     flex-wrap: wrap;
@@ -330,23 +329,73 @@ input::placeholder {
 .input-field{
     width: 49%;
     margin-bottom: 12px;
-    
 }
 .calculator-input-container input,select{
     width: 100%;
     height: 48px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 12px 40px 12px 20px;
     color: rgba(255, 255, 255, 0.6);
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
-
+    border-right: 20px solid transparent;
 }
-.input-field-selector{
+.input-field-selector {
     margin-bottom: 50px;
 }
+/* calculation sector ends here */
 
-/* responsive media query */
+/* teem section starts here */
+.teem-img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    gap: 20px;
+
+}
+.teem-section{
+    max-width: 1060px;
+    margin: 88px auto;
+}
+.teem-img{
+    position: relative;
+}
+.trainer-name{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.trainer{
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.individual-img{
+    width: 326px;
+    height: 272px;
+}
+.individual-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.img-info{
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+}
+.teem-section-heading{
+    max-width: 671px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 76px;
+}
+/* teem section ends here */
+
+
+
+
+/* responsive media query part stats */
 
 @media screen and (max-width: 576px) {
     .description-primary{
@@ -446,10 +495,19 @@ input::placeholder {
     .calculator-title{
         font-size: 1rem;
     }
-    .calculation-section-header{
+    .calculation-section-header,{
         width: calc(100% - 40px);
     }
     .calculation-section-title{
         margin-bottom: 14px;
+    }
+    .teem-section{
+        width: calc(100% - 40px);
+        margin: 88px auto;
+    }
+    .teem-img-container{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 12px;
     }
 }
