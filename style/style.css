@@ -574,6 +574,10 @@ footer{
         grid-template-columns: repeat(1,1fr);
         align-items: center;
         padding: 20px;
+        margin: 0 auto;
+    }
+    .individual-img{
+        width: 100%;
     }
     .teem-section-heading{
         width: 100%;
