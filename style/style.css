@@ -25,7 +25,7 @@ body{
     background: rgb(0, 0, 0);
 }
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 
 /* shared styled */
@@ -37,11 +37,12 @@ header{
 }
 .btn-primary{
     border-radius: 42px;
+    width: 224px;
     background: rgb(230, 83, 60);
     padding: 16px 40px 16px 40px;
     border: none;
     font-size: 1.125rem;
-    max-width: 224px;
+    color: rgb(255, 255, 255);
 }
 .section-title{
     font-size: 3rem;
@@ -230,10 +231,127 @@ nav{
 }
 /* changing-habit-section ends here */
 
+/* running section starts here */
+.running-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1060px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px 32px 29px 54px;
+}
+.running-section-text{
+    width: 45%;
+}
+.running-section-img{
+    background-image: url(../images/running.jpg);
+    width: 38%;
+    height: 312px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+}
+.running-description{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+/* running section ends here */
+
+/* calculation sector starts here */
+select:invalid {
+    color: rgba(255, 255, 255, 0.6);
+}
+    option {
+    color: black;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.calculator-container{
+    background-color: rgb(34, 34, 34);;
+}
+.calculator-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.chart table{
+    border-collapse: collapse;
+}
+.chart th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 13px 20px;
+}
+#table-header{
+    font-size: 1rem;
+    font-weight: 500;
+}
+#table-data{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* calculation sector ends here */
+.calculation-section-header{
+   max-width: 671px;
+   margin: 78px auto;
+}
+.calculator-container{
+    display: flex;
+    justify-content: space-around;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+} 
+.chart h2{
+    margin-left: 15px;
+    margin-bottom: 60px;
+}
+
+.bmi{
+    margin-top: 49px;
+    max-width: 577px;
+}
+.bmi > .bmi-description{
+    margin-top: 10px;
+    margin-bottom: 34px;
+}
+.calculator-input-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-field{
+    width: 49%;
+    margin-bottom: 12px;
+    
+}
+.calculator-input-container input,select{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+
+}
+.input-field-selector{
+    margin-bottom: 50px;
+}
 
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
+    .description-primary{
+        line-height: 24px;
+    }
     nav{
         width: calc(100% - 40px);
         margin-top: 52px;
@@ -244,13 +362,13 @@ nav{
     .hamburger{
         display: block;
     }
-    .banner, .habit-section-img-container{
+    .banner, .habit-section-img-container, .running-section, .calculator-container{
         flex-direction: column;
     }
     .banner{
         gap: 5px;
     }
-    .banner-text{
+    .banner-text, .running-section{
         width: calc(100% - 40px);
         margin: 50px auto;
     }
@@ -268,7 +386,7 @@ nav{
         font-size: 4rem;
         
     }
-    .btn-primary{
+    .header-btn{
         width: 170px;
         padding: 16px 20px;
     }
@@ -300,6 +418,38 @@ nav{
     }
     .habit-des{
         text-align: center;
-        line-height: 150%;
+    }
+    .running-section{
+        margin-top: 70px;
+    }
+    .running-section-text, .running-section-img{
+        width: 100%;
+    }
+    .running-section-img{
+        height: 170px;
+        background-size: cover;
+        margin-top: 30px;
+    }
+    .running-section-btn{
+        width: 100%;
+    }
+    .running-description{
+        margin-top: 14px;
+    }
+    .chart, .bmi {
+        width: calc(100% - 40px);
+        margin: 30px auto;
+    }
+    .input-field{
+        width: 48.2%;
+    }
+    .calculator-title{
+        font-size: 1rem;
+    }
+    .calculation-section-header{
+        width: calc(100% - 40px);
+    }
+    .calculation-section-title{
+        margin-bottom: 14px;
     }
 }
