@@ -698,12 +698,19 @@ footer{
     
     .food-child-img-container{
         width: calc(100% - 20px);
+        margin: 0 auto;
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
     }
     .food-child-img{
-        margin-left: 60px;
+        /* margin-left: 60px; */
         transform: rotate(0deg);
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    .food-child-img img{
+        width: 100%;
     }
     .food-child-text-container{
         width: 100%;
