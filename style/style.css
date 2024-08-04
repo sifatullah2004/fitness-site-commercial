@@ -25,7 +25,9 @@ body{
     background: rgb(0, 0, 0);
 }
 header{
-    background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(205.00deg, rgba(119,119,119,0.15),rgba(17,17,17,1) 100%);
+    padding-top: 57px;
+
 }
 
 /* shared styled */
@@ -63,7 +65,7 @@ header{
 /* nav related style starts */
 nav{
     max-width: 1060px;
-    margin: 57px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,8 +76,10 @@ nav{
     gap: 47px;
     font-size: 1.125rem;
     align-items: center;
-    justify-content: center;
-    padding-top: 20px;
+    padding: 4px 20px 4px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+
 }
 .nav-menu a{
     text-decoration: none;
@@ -107,11 +111,12 @@ nav{
 /* banner section related style stars */
 
 .banner{
-    max-width: 1050px;
+    width: 1050px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 167px;
+
 }
 .banner-text{
     display: flex;
@@ -260,6 +265,68 @@ nav{
 }
 /* running section ends here */
 
+/* food section related style */
+.food{
+    max-width: 1060px;
+    margin: 88px auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding-top: 30px;
+}
+.food-child-1{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.food-child-2{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-top: 60px;
+    padding: 30px;
+
+}
+.food-child-img-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+    
+}
+.food-child-img{
+    width: 270px;
+    height: 150px;
+    gap: 20px;
+    border-radius: 20px;
+    transform: rotate(-25deg);
+    margin-bottom: 20px;
+}
+.food-child-img img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.food-child-text-container{
+    width: 40%;
+}
+.food-child-text-container > div{
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+.food-text-title{
+    font-size: 1.8rem;
+}
+.food-child-text-container p{
+    margin: 30px 0;
+}
+/* food section related style ends */
+
 /* calculation sector starts here */
 select:invalid {
     color: rgba(255, 255, 255, 0.6);
@@ -302,6 +369,7 @@ input::placeholder {
 .calculator-container{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 .chart{
     display: flex;
@@ -459,15 +527,24 @@ footer{
     font-size: 1.125rem;
 }
 /* footer related style ends here */
-
+.hide{
+    display: none;
+}
 
 
 
 /* responsive media query part stats */
 
 @media screen and (max-width: 576px) {
+    body{
+        border: 1px solid red;
+        max-width: 100%;
+    }
     .description-primary{
         margin-top: 14px;
+    }
+    header{
+        padding-top: 0;
     }
     nav{
         width: calc(100% - 40px);
@@ -479,11 +556,12 @@ footer{
     .hamburger{
         display: block;
     }
-    .banner, .habit-section-img-container, .running-section, .calculator-container, .last-section-child, .get-started{
+    .banner, .habit-section-img-container, .running-section, .calculator-container, .last-section-child, .get-started, .food-child-2{
         flex-direction: column;
     }
     .banner{
         gap: 5px;
+        width: 100%;
     }
     .banner-text, .running-section{
         width: calc(100% - 40px);
@@ -492,16 +570,15 @@ footer{
     .banner-title{
         font-size: 2.125rem;
     }
+    .miama{
+        font-size: 4rem;
+    }
     .banner-img-container{
         width: calc(100% - 40px);
         margin: 0 auto;
     }
     .banner-img-container img{
         width: 100%;
-    }
-    .miama{
-        font-size: 4rem;
-        
     }
     .header-btn{
         width: 170px;
@@ -511,8 +588,8 @@ footer{
         display: none;
     }
     .service-token-1{
-        padding: 12px 0 11px 18px;
-        width: 160px;
+        padding: 12px 0 11px 17px;
+        width: 155px;
         top: 12%;
         left: 55%;
     }
@@ -560,11 +637,14 @@ footer{
     .input-field{
         width: 48.2%;
     }
-    .calculator-title{
-        font-size: 1rem;
-    }
     .calculation-section-header{
         width: calc(100% - 40px);
+    }
+    .calculator-container{
+        padding-bottom: 20px;
+    }
+    .calculator-title{
+        font-size: 1rem;
     }
     .teem-section{
         width: calc(100% - 40px);
@@ -596,6 +676,38 @@ footer{
         gap: 25px;
     }
     footer{
+        width: 100%;
+    }
+    .food{
+        width: calc(100% - 40px);
+    }
+    
+    .food-child-1{
+        width: 100%;
+
+    }
+    .food-child-2{
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        gap: 60px;
+        margin-top: 50px;
+    }
+    
+    .food-child-img-container{
+        width: calc(100% - 20px);
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .food-child-img{
+        margin-left: 60px;
+        transform: rotate(0deg);
+    }
+    .food-child-text-container{
+        width: 100%;
+    }
+    
+    .food-child-text-container > div{
         width: 100%;
     }
     
