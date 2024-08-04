@@ -581,6 +581,10 @@ footer{
     .banner-img-container img{
         width: 100%;
     }
+    .banner-btn-container{
+        display: flex;
+        justify-content: space-between;
+    }
     .header-btn{
         width: 170px;
         padding: 16px 20px;
