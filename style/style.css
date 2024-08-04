@@ -539,7 +539,6 @@ footer{
 
 @media screen and (max-width: 576px) {
     body{
-        border: 1px solid red;
         max-width: 100%;
     }
     .description-primary{
@@ -632,6 +631,45 @@ footer{
     .running-description{
         margin-top: 14px;
     }
+    .food{
+        width: calc(100% - 40px);
+    }
+    
+    .food-child-1{
+        width: 100%;
+
+    }
+    .food-child-2{
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        gap: 60px;
+        margin-top: 50px;
+    }
+    
+    .food-child-img-container{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .food-child-img{
+        /* margin-left: 60px; */
+        transform: rotate(0deg);
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    .food-child-img img{
+        width: 100%;
+    }
+    .food-child-text-container{
+        width: 100%;
+    }
+    
+    .food-child-text-container > div{
+        width: 100%;
+    }
     .chart, .bmi {
         width: calc(100% - 40px);
         margin: 30px auto;
@@ -680,44 +718,6 @@ footer{
     footer{
         width: 100%;
     }
-    .food{
-        width: calc(100% - 40px);
-    }
     
-    .food-child-1{
-        width: 100%;
-
-    }
-    .food-child-2{
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px;
-        gap: 60px;
-        margin-top: 50px;
-    }
-    
-    .food-child-img-container{
-        width: calc(100% - 20px);
-        margin: 0 auto;
-        grid-template-columns: repeat(1,1fr);
-        gap: 30px;
-    }
-    .food-child-img{
-        /* margin-left: 60px; */
-        transform: rotate(0deg);
-        width: 100%;
-        margin: 0 auto;
-    
-    }
-    .food-child-img img{
-        width: 100%;
-    }
-    .food-child-text-container{
-        width: 100%;
-    }
-    
-    .food-child-text-container > div{
-        width: 100%;
-    }
     
 }
