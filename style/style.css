@@ -25,9 +25,7 @@ body{
     background: rgb(0, 0, 0);
 }
 header{
-    background: linear-gradient(205.00deg, rgba(119,119,119,0.15),rgba(17,17,17,1) 100%);
-    padding-top: 57px;
-
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 
 /* shared styled */
