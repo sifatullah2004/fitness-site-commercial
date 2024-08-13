@@ -25,7 +25,7 @@ body{
     background: rgb(0, 0, 0);
 }
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-image: linear-gradient(to bottom, #000000, #101010, #191919, #232323, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #232323, #191919, #101010, #000000);
 }
 
 /* shared styled */
